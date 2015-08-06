@@ -7,7 +7,7 @@ So you have to use it with jafka_2.xx-0.x.x.x.jar, see https://www.apache.org/dy
 for downloading kafka, extract kafka, the jar-balls can be found in the libs sub directory.
 
 ## usage
-your can clone this repo, there is a jdbc-for-kafka-x.x.x.jar in the root directory. add this jar file and the kafka jar file into your java project.
+You can clone this repo, there is a jdbc-for-kafka-x.x.x.jar in the root directory. add this jar file and the kafka jar file into your java project.
 
 Here is the example test code:
 >       Class.forName("cn.edu.ruc.kafka.Driver");
@@ -19,10 +19,10 @@ Here is the example test code:
         ResultSet rs = st.executeQuery(Query.GET_LEADER_PARTITIONS_METADATA);
         while (rs.next())
         {
-          System.out.println(((Broker)rs.getObject("leader")).host() + ", " + rs.getInt("partitionId") + ", " + rs.getInt("sizeInBytes"));
+                System.out.println(((Broker)rs.getObject("leader")).host() + ", " + rs.getInt("partitionId") + ", " + rs.getInt("sizeInBytes"));
         }
         st.close();
         conn.close();
         
-An full example of using jdbc-for-kafka can be found in src/cn/edu/ruc/kafka/test/KafkaJDBCTest
+A full example of using jdbc-for-kafka can be found in src/cn/edu/ruc/kafka/test/KafkaJDBCTest
 
