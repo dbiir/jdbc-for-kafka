@@ -3,7 +3,7 @@ The java consumer API of kafka is tedious. This is an easy-to-use JDBC for kafka
 
 ## Dependency
 This jdbc relies on the SimpleConsumer in kafka.
-So you have to use it with jafka_2.xx-0.x.x.x.jar, see https://www.apache.org/dyn/closer.cgi?path=/kafka/0.8.2.1/kafka_2.10-0.8.2.1.tgz
+So you have to use it with kafka_2.xx-0.x.x.x.jar, see https://www.apache.org/dyn/closer.cgi?path=/kafka/0.8.2.1/kafka_2.10-0.8.2.1.tgz
 for downloading kafka, extract kafka, the jar-balls can be found in the libs sub directory.
 
 ## Usage
